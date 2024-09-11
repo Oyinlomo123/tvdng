@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sign in</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src='main.js'></script>
+</head>
+<style>
+    body{
+        place-items: center;
+        max-width: 100%;
+        background-color: #000;
+    }
+    .signin{
+        border: 1px solid black;
+        margin: 50px auto;
+        width: 30vw;
+        border-radius: 10px;
+        background:whitesmoke;
+        padding: 30px;
+    }
+    input{
+        width: 30vw;
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid black;
+        color: black;
+        background-color:whitesmoke;
+    }
+    label{
+        float: left;
+        font-size: 18px;
+        padding-left: 30px;
+        font-weight: 600;
+    }
+    form .sign {
+        text-decoration: none;
+        text-align: center;
+    }
+    .forgot{
+        padding: 10px;
+        float: right;
+        text-decoration: none;
+        color: rgb(133, 98, 10);
+    }
+    button{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 15px ;
+        width: 30vw;
+        font-size: 18px;
+        border: none;
+        background:rgb(133, 98, 10);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button a{
+        color: black;
+        font-size: 24px;
+    }
+    .signin-nav{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signin-nav img{
+        width: 80px;
+        float: left;
+    }
+    .signin-nav h2{
+        color:rgb(133, 98, 10) ;
+    }
+    h2 span{
+        color: green;
+    }
+    hr{
+        width: 10rem;
+        color: #000;
+    }
+    .or{
+        display: flex;
+    }
+    .fill{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .fill a{
+        font-size: 36px;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .ri-google-fill{
+        color: #ea4335;
+    }
+    .ri-twitter-fill{
+        color: #1DA1F2;
+    }
+    .ri-facebook-fill{
+        color: #1877F2 g;
+    }
+    .reg{
+        text-align: center;
+    }
+    .reg a{
+        text-decoration: none;
+        color:rgb(133, 98, 10);
+    }
+    .login{
+        margin: 0 0 0 12rem ;
+        display: inline-flex;
+        gap: 0;
+    }
+    .log{
+        background-color: green;
+    }
+    .log img{
+        width: 20rem;
+        margin: 10rem 0 0 3rem ;
+    }
+</style> 
+<body>
+    <div class="login">
+     <div class="signin">
+        <div class="signin-nav">
+            <img src="round logo.png" alt="logo">
+            <h2>TEL<span>V</span>IDA</h2>
+        </div>
+        <form action="">
+            <h2>SIGN IN</h2>
+            <h3>Sign in to continue our application</h3>
+            <input type="email" placeholder="Email Address" required=""><br><br>
+           
+            <input type="password" placeholder="Password" required="" >
+            <a class="forgot" href="#">Forgot Password ?</a>
+            
+            <button type="submit"><a class="sign" href="service.html" id="click" target="_blank">Sign in</a></button>
+          
+        </form>
+        <div class="or">
+            <hr>or <hr>
+            </div>
+            <div class="fill">
+              <a href="https://accounts.google.com.ng/" target="_blank"> <i class="ri-google-fill"></i></a>  
+              <a href="https://twitter.com/login" target="_blank"> <i class="ri-twitter-fill"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"> <i class="ri-facebook-fill"></i></a>
+            </div>
+            <h4 class="reg">Don't have an account <a href="service.html"target="_blank">Register now</a></h4>
+     </div>
+     <div class="signin log">
+        <img src="image.png" alt="">
+     </div>
+    </div>
+
+    <!-- document.getElementById('login').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const errorMessage = document.getElementById('error-message');
+        
+        if (!username || !password) {
+            errorMessage.textContent = 'Please fill in all fields.';
+        } else {
+            errorMessage.textContent = 'sign';
+            // Add further login logic here
+        }
+    });
+        document.getElementById('Link').addEventListener('click', function(event)) {
+            event.preventDefault(); // Prevent the default link behavior
+            alert('Link clicked!');} -->
+         
+</script>
+            
+</body>
+</html>

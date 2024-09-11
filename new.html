@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="new.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- boxicons link -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!-- remixicon -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        </head>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+        
+body{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.25%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 33px 9% ;
+    top:0;
+    list-style: none;
+    z-index: 1000;
+    justify-content: space-between;
+    background: transparent;
+}
+.nav-links{
+    display: flex;
+}
+.nav-link{
+    list-style: none;
+}
+.nav-link a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.nav-link a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    font-size: 35px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    display:flex;
+    grid-template-columns:2 1fr ;
+    align-items: center;
+    gap: 5rem;
+}
+img{
+    width: 500px;
+    height: auto;
+}
+section{
+    padding: 0 17%;
+    margin-top: 4%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: 'Permanent Maker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    font-size: 15px;
+    color: white;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translate(8px);
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icons{
+    position:absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+.icons i:hover{
+    color: #4d9559;
+    transform: translateY(-5px);
+}
+.icons a{
+    text-decoration: none;
+}
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down a{
+    text-decoration: none;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:1535px) {
+   header{
+    padding: 15px 3%;
+    transition: .2s;
+}
+.icons{
+    padding: 0 3%;
+    transition: .2s;
+}
+.scroll-down{
+    right: 3%;
+    transition: .2s;
+}
+}
+@media screen and (max-width:1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin:0 0 30px;
+    }
+}
+    @media screen and (max-width:1195px){
+        section{
+            padding: 0 3%;
+            transition: .2s;
+        }
+        .hero-text{
+            padding-top: 115px;
+        }
+        .hero-img {
+            text-align: center;
+
+        }
+        .hero-img img{
+            width: 560px;
+            height: auto;
+        }
+        .hero{
+            height: 100%;
+            gap: 1rem;
+            display: grid;
+            grid-template-columns:1fr;
+        }
+        .icons{
+            display: none;
+        }
+        .scroll-down{
+            display: none;
+        }
+}
+@media screen and (max-width:990px){
+    #menu-icon{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 8%;
+        right: -100%;
+        width: 300px;
+        height: 50vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .nav-links a{
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+    .nav-links.open{
+        right: 0;
+    }
+}
+@media screen and (max-width:680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+.gpics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pics img{
+    max-width: 25vw;
+    max-height: 50vh;
+}
+    </style>
+    <body>
+        <header>
+          <a href="h" class="logo">COC-STATS</a>
+            
+            <ul class="nav-links">
+                <li class="nav-link" >
+                    <a href="service.html">HOME</a>
+                </li>
+                <li class="nav-link service">
+                    <a href="#PRODUCT">SOLUTION</a>
+                </li>
+                <li class="nav-link "> 
+                    <a href="home.html">ABOUT US</a></li>
+                <li class="nav-link ">
+                    <a href="#CONTACTUS">CONTACT US</a>
+                </li>
+                <li class="nav-link ">
+                    <a href="#CONTACTUS">CONTACT US</a>
+                </li>
+                <li class="nav-link ">
+                    <a href="#CONTACTUS">CONTACT US</a>
+                </li>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>    
+        </header>
+        <section class="hero">
+            <div class="hero-text">
+                <h5>#2 Trending</h5>
+                <h4>Lead Supercell</h4>
+                <h1>GOBLINS</h1>
+                <P> Impedit sequi quasi libero autem ratione aliquam quibusdam,<BR> optio aperiam  officia voluptatum porro. Impedit voluptas minus quam sunt voluptatum.</P>
+                    <a href="#">Compare</a>
+                    <a href="#" class="ctaa"><i class="ri-play-fill"></i>Watch Game</a>
+            </div>
+            <div class="hero-img">
+                <img src="goblin.png">
+            </div>
+           
+        </section>
+        <div class="icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-youtube-line"></i></a>
+            <a href="#"><i class="ri-dribbble-line"></i></a>
+        </div>
+        <div class="scroll-down">
+            <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+        </div>
+
+        <div class="container">
+            <p>hello word</p>
+        </div>
+        <!-- custom js link -->
+        <script src="new.js"></script>
+
+
+
+
+
+
+
+
+        <div class="gpics">
+            <div class="pics">
+                <img src="samsung.png" alt="">
+                <h2>samsung</h2>
+            </div>
+            <div class="pics">
+                <img src="printer.png" alt="">
+                <h2>samsung</h2>
+            </div>
+            <div class="pics">
+                <img src="digital signal.png" alt="">
+                <h2>samsung</h2>
+            </div>
+            <div class="pics">
+                <img src="laptop.png" alt="">
+                <h2>samsung</h2>
+            </div>
+            <div class="pics">
+                <img src="networking.png" alt="">
+                <h2>samsung</h2>
+            </div>
+            <div class="pics">
+                <img src="samsung.png" alt="">
+                <h2>samsung</h2>
+            </div>
+        </div>
+    </body>
+</html>

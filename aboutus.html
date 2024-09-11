@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>about us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='service.css'>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+      background: #000;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+}
+    .aboutbg{
+        background-image: url(conabout.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center; 
+        padding: 5rem 0 12rem 3rem;
+        text-align: center;
+    }
+    .aboutbg h2{
+        
+        margin-top:3rem;
+        font-size: 50px;
+        color: white;
+    }
+    .aboutbg p{
+        margin: 30px 0 0 0;
+        padding: 0 15rem 0 15rem;
+        color: white;
+        font-size: 20px;
+    }
+    header{
+        background-color: none;
+    }
+    .about-header{
+        background-color: blue;
+    }
+    
+    .ourcore{
+      text-align: center;
+      padding: 3rem 0 3rem 0 ;
+      background: silver;
+    }
+    .ourv{
+      text-align: center;
+    }
+    .videocon{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .videocon img{
+      border: 2px solid green;
+      width: 15rem;
+      height: 10rem;
+      padding: 15px;
+      background:white;
+    }
+    .videocon1{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .videocon1 img{
+      width: 25rem;
+      height: 14.5rem;
+    }
+    .our-video-img{
+      display: flex;
+      justify-content: space-around;
+      margin: 0 3rem 0 3rem;
+    }
+    .polycisco{
+      border: 1px solid goldenrod;
+      background: goldenrod;
+      margin-top: 1rem;
+      width: 30rem;
+      height: 10rem;
+      justify-content: center;
+      margin-left: 30%;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    ol li{
+      list-style:none;
+      padding: 0 0 0 10px;
+    }
+    .overview img{
+      width: 30vw;
+    }
+    .overview1{
+      margin: 6rem 3rem 0 3rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: grey;
+    }
+  
+    .overview1 h5{
+      padding-top: 3rem;
+      line-height: 20px;
+      font-size: 16px;
+    }
+    .overview-text{
+      padding: 50px 0 0 50px;
+    }
+    .ourcore h5{
+      font-size: 20px;
+      padding-top: 10px;
+      font-weight: 300;
+    }
+    .overview2{
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-around;
+      gap: 4rem;
+      margin: 50px  ;
+    }
+    .overview2 h5{
+      font-size: 18PX;
+      font-weight: 300;
+    }
+    .ourvi img{
+      width: 80px;
+      padding-top: 20px;
+    }
+    .ourvi h3{
+      padding: 20px 0 10px 0;
+    }
+    .section-card{
+      border: 1px solid white;
+      margin-bottom: 10px;
+      background: white;
+      color: #000;
+      padding: 20px;
+      font-size: 18px;
+      width: 21rem;
+      height: auto;
+      text-align: left;
+      border-radius: 15px;
+    }
+    .section-card p{
+      font-weight: 400;
+    }
+    .section-grid{
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-around;
+    }
+   .h5{
+    margin-top: 60px;
+    display: flex;
+   }
+   .h5 h5{
+    font-size: 18px;
+    padding-left: 10px;
+   }
+   .month{
+    font-weight: 200;
+   }
+   h5 span{
+    font-weight: 200;
+   }
+   .round{
+    width: 50px;
+   }
+   h4 i{
+    font-size: 14px;
+    color: goldenrod;
+   }
+
+   h4 img{
+    width: 50px;
+    padding: 0 0 0 0px;
+   }
+   .ri-arrow-left-s-line{
+    border: 1px solid slategrey;
+    background-color: silver;
+    height: 20px;
+    padding-bottom: 20px;
+    border-radius: 15rem;
+    margin-top:8rem;
+    font-size: 18px;
+   }
+   .ri-arrow-right-s-line{
+    border: 1px solid slategrey;
+    background-color: silver;
+    font-size: 18px;
+    height: 20px;
+    padding-bottom: 20px;
+    border-radius: 15rem;
+    margin-top:8rem;
+   }
+   .container{
+    position: relative;
+    background: slategray;
+    padding: 1rem;
+   }
+   .container .wrapper{
+    width: 80vw;
+    height: 100vh;
+    margin: 5rem auto;
+    overflow: hidden;
+    padding-left: 10rem;
+   }
+   .wrapper-holder-img{
+    width: 80%;
+   }
+   .container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(6, 100%);
+    height: 100%;
+    width: 100%;
+    animation:slider  30s ease-in-out infinite alternate;
+   }
+   .container #slider-img-1{
+    background-image: url(vc\ img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .container #slider-img-2{
+    background-image: url(vc\ img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .container #slider-img-3{
+    background-image: url(vc\ img3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .container #slider-img-4{
+    background-image: url(digital\ signal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .container #slider-img-5{
+    background-image: url(vc\ img5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .container #slider-img-6{
+    background-image: url(vc\ img6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+   }
+   .container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+   }
+   @keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+   }
+   .customer{
+    text-align: center;
+    margin-top: 3rem;
+   }
+   .customer h1{
+    font-size: 40px;
+   }
+   .customer h4{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 10px;
+   }
+   .customer-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px 0 0 40px;
+    
+   }
+   .customer-img img{
+    width: 20vw;
+    padding: 10px;
+    border: 1px solid gray;
+    height: 20vh;
+    margin-bottom: 10px;
+    filter: grayscale(1);
+   }
+   .contactus h3{
+    font-size: 18px;
+   }
+</style>
+<body>
+  <div class="about-header">
+    <header>
+          <div><A href="service.html"><img  src="image.png"></A>
+          </div>
+          <div class="big-scrn-navbar">
+            <div>
+              <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+                 <i class="fa fa-bars"></i>
+               </label> 
+            </div>
+            <nav>
+              <ul class="nav-links">
+                <li class="nav-link" >
+                  <a href="service.html">HOME</a>
+                  </li>
+                      <li class="nav-link service">
+                        <a href="#PRODUCT">SOLUTION</a>
+                        <ul class="dropdown">
+                      <li><a href="Unified communication.HTML">Unified Communication</a></li>
+                      <li><a href="cloud-computing.html">Cloud-Computing</a></li>
+                      <li><a href="5G Connectivity(NVNO).html">5G Connectivity(NVNO)</a> </li>
+                      <li><a href="Advanced Data Analysis.html">Advanced Data Analysis</a> </li>
+                      <li><a href="Consumables.html">Consumables</a> </li>
+                        </ul>
+                      </li>
+                      <li class="nav-link "> 
+                      <a href="home.html">ABOUT US</a></li>
+                      <li class="nav-link "><a href="#CONTACTUS">CONTACT US</a></li>
+                      <li class="nav-link" >
+                <a href="home.html">sign in</a>
+                </li>
+                
+              </ul>
+            </nav>
+          </div>
+    </header>
+  </div>
+    <div class="aboutbg">
+        <H2 class="">A journey to World-Class<br> Expertise</H2>
+        <P>We deliver cutting-edge IT solutions with a bold vision for transforming emerging markets in the ever-evolving digital age.</P>
+    </div>
+    <div>
+      <div class="overview1">
+        <div class="overview-text">
+          <h1>Company&nbsp;Overview</h1>
+            <h5>
+              Telvida International Systems is a 
+              contemporary telecommunications <br>
+              business that specializes in providing 
+              businesses and discerning individuals<br> 
+              with a flexible, affordable, and
+              comprehensive suite of communication <br>
+              tools, enabling them to create a seamless 
+              engagement experience for their <br>
+              employees and stakeholders, no matter where 
+              they are or what devices<br> they are 
+              using.
+            </h5>
+          </div>
+          <div>
+            <img src="overview.png" alt="">
+          </div>
+        </div>
+      </div>
+      <DIV class="our">
+        <div class="overview2">
+          <div class="ourvi">
+            <img src="ourm.png" alt="">
+            <h3>OUR MISSION</h3>
+            <h5>To connect people and communities by 
+              bridging the gap between technology <br>
+              and human needs, ensuring that every 
+              customer's communication needs are <br>
+              met with innovation, affordability and 
+              accessibility.</h5>
+          </div>
+            <div class="ourvi">
+              <img src="ourv (1).png" alt="">
+              <h3>OUR VISION</h3>
+              <h5>To become a world-class 
+                telecommunications company, <br>
+                connecting people and businesses across 
+                borders and enabling seamless global 
+                communication.</h5>
+            </div>
+            <div class="ourvi">
+              <img src="ourcore.png" alt="">
+              <h3>OUR CORE VALUE</h3>
+              <h5>
+                It guides our actions, decisions, and relationships. We are committed to honesty, 
+                transparency, and ethical conduct in all that we do. It's not just a value we hold' 
+                it's a way of life within our organization, influencing every interaction and decision.</h5>
+            </div>
+        </div>
+      </DIV>
+    </div>
+    <div class="container id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="wrapper">
+        <div class="wrapper-holder">
+          <div class="wrapper-holder-img" id="slider-img-1"></div>
+          <div class="wrapper-holder-img" id="slider-img-2"></div>
+          <div class="wrapper-holder-img" id="slider-img-3"></div>
+          <div class="wrapper-holder-img" id="slider-img-4"></div>
+          <div class="wrapper-holder-img" id="slider-img-5"></div>
+          <div class="wrapper-holder-img" id="slider-img-6"></div>
+        </div>
+      </div>
+      <div class="button-holder">
+        <a href="#slider-img-1" class="button"></a>
+        <a href="#slider-img-2" class="button"></a>
+        <a href="#slider-img-3" class="button"></a>
+        <a href="#slider-img-4" class="button"></a>
+        <a href="#slider-img-5" class="button"></a>
+        <a href="#slider-img-6" class="button"></a>
+      </div>
+    </div>
+    <div class="ourcore">
+      <h1>See what people are saying about Trustpilot</h1>
+      <h5>We aim to continuously improve, and every review helps us provide better experiences for everyone.</h5>
+      <div class="section-flex">
+        <div class="section-grid">
+          <i class="ri-arrow-left-s-line"></i>
+          <div class="section-card">
+            <h4 class="month"> <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i> &nbsp;&nbsp; &nbsp;&nbsp;2 month ago &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<img src="image.png" alt=""></h4><br>
+            <p><span ><i class="ri-double-quotes-l"></i></span>Telvida's ERP system has helped our management 
+              system to be faster and easier. 
+              </p>
+              <div class="h5">
+              <img class="round" src="ROUNDIMG.png" alt="">
+              <h5>Travel Beta <br><span> Abuja</span> </h5>
+              </div>
+          </div>
+          <div class="section-card">
+            <h4 class="month"> <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i> &nbsp;&nbsp; &nbsp;&nbsp;2 month ago &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<img src="image.png" alt=""></h4><br>
+            <p><span ><i class="ri-double-quotes-l"></i></span>It saves time and cost. Makes our advertisements
+              easy to publish and has increased our 
+              sales ever since
+              </p>
+              <div class="h5">
+              <img class="round" src="ROUNDIMG.png" alt="">
+              <h5>ARM pensions<br><span> Abuja</span> </h5>
+              </div>
+          </div>  <div class="section-card">
+            <h4 class="month"> <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i> &nbsp;&nbsp; &nbsp;&nbsp;2 month ago &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<img src="image.png" alt=""></h4><br>
+            <p><span ><i class="ri-double-quotes-l"></i></span>Despite the number of inputs daily, Telvida's 
+              print management solution helps in managing 
+              print jobs easily.
+              </p>
+              <div class="h5">
+              <img class="round" src="ROUNDIMG.png" alt="">
+              <h5>Nigerian Breweries <br><span> Abuja</span> </h5>
+              </div>
+          </div>
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+        
+      </div>
+    </div>
+    <div class="customer">
+        <h1>Our customers span the globe</h1>
+        <h4>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+        <div class="customer-img">
+          <img src="facebook.png" alt="">
+          <img src="tinder.png" alt="">
+          <img src="airbnd.png" alt="">
+          <img src="hubspot.png" alt="">
+          <img src="google.png" alt="">
+          <img src="microsoft.png" alt="">
+          <img src="kisspng-amazon-com-brand-logo-e-commerce-customer-international-volunteering-5b534dc63286b6.882291351532186054207.png" alt="">
+          <img src="instagram.png" alt="">
+        </div>
+    </div>
+    
+    <div class="contactus">
+      <div>
+        <h1 id="CONTACTUS">Contact Us</h1>
+        <h3>Need to get in touch with us? Either fill out the form with your inquiry or 
+          find the <a href="h">department email</a> you'd like to contact below.
+        </h3>
+      </div>
+      <div class="form">
+        <form action="result.html" method="get">
+          <div class="form1">
+            <div>
+              <label>First Name *</label><br>
+              <input type="text" size="30" placeholder="First name">&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div>
+            <label>Last Name *</label><br>
+            <input  type="text" size="30" placeholder="Last name">
+            </div>
+          </div>
+          <label>Email *</label><br>
+          <input type="email" size="70" placeholder="Enter your email">
+          <br>
+          <label>Message</label><br>
+          <textarea rows="10" cols="81" > Enter your Message </textarea><br>
+          <input class="labelinput" type="submit"
+           placeholder="Submit">
+        </form>
+      
+      </div>
+    </div> 
+    <div class="lastbody">
+      <div class="lastbody-flex"><br><br>
+        <img src="image.png"><br><br>
+        <div class="Contact-flex">
+          <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+        <h3> &nbsp; &nbsp; &nbsp;0700 0221 2013<BR> &nbsp; &nbsp; &nbsp;0700 02212012 </h3><br>
+          </div><br>
+        <h3 class="tel"><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+          &nbsp; &nbsp; telvida.com</h3><br>
+          <div class="addressflex">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#FFFFFF"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+        <h3> &nbsp; &nbsp; Telvida Intl. Systems,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Third Floor, AIICO Plaza
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;Plot PC12, Churchgate Street<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;victoria island, lagos state.</h3>
+      </div>
+    </div>
+      
+        <div class="lastbody-nav">                       
+          <div class="lastbody-flex middle">
+            <h2>SOLUTION</h2>
+            <ul>
+              <li><a href="Unified communication.HTML">Unified Communication</a></li>
+              <li><a href="cloud-computing.html">Cloud-Computing</a></li>
+              <li><a href="5G Connectivity(NVNO).html">5G Connectivity(NVNO)</a> </li>
+              <li><a href="Advanced Data Analysis.html">Advanced Data Analysis</a> </li>
+              <li><a href="Consumables.html">Consumables</a> </li>
+             </ul>
+            
+          </div>
+          <div class="lastbody-flex middle">
+            <h2>COMPANY</h2>
+            <ul>
+             <a href="service.html"><li>ABOUT US</li></a>
+             <a href="service.html"><li>CONTACT</li></a>
+            </ul>
+          </div>
+          <div></div>
+        </div>  
+    </div>
+    <div class="Copyright">
+      <h4>Copyright @ telvida.ng</h4>
+      <div class="font">
+        <i class="fa fa-facebook" style="font-size:36px"></i>
+        <i class='fab fa-twitter-square' style='font-size:36px'></i>
+        <i class="fa fa-instagram" style="font-size:36px"></i>
+        <i class='fab fa-linkedin' style='font-size:36px'></i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

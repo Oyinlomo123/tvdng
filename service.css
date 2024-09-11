@@ -1,0 +1,912 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-body{
+    max-width: 100%;
+    background-color: black;
+    color: white; 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+header{
+    
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    top: 0;
+    padding: 10px 0px 10px ;
+           }
+           header:before{
+            content: '';
+            position: absolute;
+                   }          
+header nav a{
+    text-decoration: none;
+    padding:10px 20px 10px 20px;
+    color: goldenrod;
+}
+header img{
+    max-width: auto;
+    max-height: 80px;
+    padding-left: 50px
+}
+
+.nav-links{
+    display: flex;
+    padding:0px 0px 20px 0px;
+    margin-top: 10px;
+}
+.nav-links, .dropdown li{
+    list-style: none;
+    height: 100%;
+    padding: 1rem 0.5rem ;
+    font-weight: 600;
+    cursor: pointer;
+}
+.dropdown{
+    position: absolute;
+    padding: 0 2rem 0.1rem 0.2rem;
+    color: black;
+    background-color: goldenrod;
+    box-shadow: 0 4px 12 rgb(0,0,0,0.1);
+    font-size: 12px;
+    margin-top: 20PX;
+    display: none;
+}
+.dropdown a{
+    color:black ;
+}
+.nav-link{
+    font-weight: 400;
+}
+.nav-link a:hover{
+    background-color: goldenrod;
+    color: black;
+} 
+
+.nav-link .dropdown a:hover{
+    background-color: goldenrod;
+    color: blue;
+} 
+.service:hover .dropdown{
+display: block;
+}
+.checkbtn{
+    font-size: 30px;
+    color: goldenrod;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display:none ;
+}
+#check{
+    display:none;
+}
+
+
+.body{
+    max-width: 100%;
+    height: auto;
+    border: none;
+    padding:30px 60px 70px 0 ;
+    background-image: linear-gradient(rgba(60, 62, 71, 0.7),rgba(4,9,30,0.7)),url(unified.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.body-content-h1{
+    padding: 20px 0 30px 50px;
+    font-size:5rem;
+    font-weight:900;
+    color: white;
+}
+.body-content-h1 span{
+    color: goldenrod;
+}
+.body-content-h1 span{
+    letter-spacing: 10px;
+    width: 100%;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13),
+    cursor .4s step-end infinite alternate;
+    
+}
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from {
+       left: 0;
+    }
+}
+.body-content-h3{
+    padding: 10px 0 30px 50px;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+}
+.body-content-button{
+    float:right;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color:black ;
+    color: white;
+    font-size: 18px;
+    transition: 1s;
+    cursor: pointer;
+}
+.body-content-button:hover{
+    background-color: goldenrod;
+    color: black;
+}
+.sec-body{
+    text-align: center;
+    padding: 70px 0 0px  0;
+}
+.sec-body h1{
+    padding: 50px 0 20px  0;
+    color: goldenrod;
+    font-size:24px;
+    font-weight: 600;
+}
+.sec-body h4{
+    font-weight: 200;
+}
+.sec-body-tspg{
+    display:flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    gap: 40px;
+    width: 90%;
+    place-items: center;
+    padding-top: 40px;
+    padding-left: 10px;
+    animation-name: shape;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+@keyframes shape{
+    0%{
+        margin-left: 50%;
+        width: 0%;
+
+    }
+    100%{
+       width: 90%;
+    }
+}
+.sec-body-unified{
+    border: 1px solid rgb(161, 158, 158);
+    margin: 0;
+    height: auto;
+    width: 90%;
+    transition: 1s;
+    padding: 10px 0 10px 0PX;
+    text-align: center;
+    border-radius:20px ;
+}
+.sec-body-unified h2{
+    padding: 20px 0 10px 0;
+}
+
+.sec-body-unified h4{
+    padding: 0 0 80PX 0;
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.sec-body-unified button{
+    margin-top: 50PX;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 20px 10px 15px;
+    cursor: pointer;
+    transition: transform 1s ease-out;
+}
+.sec-body-unified button:hover{
+    transform: scale(1.1);
+}
+.productimg{
+    transition: transform 0.8s ease;
+}
+.productimg:hover{
+    transform: scale(1.1);
+}
+.product3{
+border: none;
+align-self: center;
+}
+.productimg{
+    width: 95%;
+    height: 40vh;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.sec-body-unified h4 .text{
+    padding: 0 0 20px 0;
+}
+.back-video{
+    position: relative;
+    padding-left: 50px;
+    left: 0;
+    z-index: -1;
+}
+.video-body{
+    display: flex;
+    padding: 70px 0 0px  0;
+}
+.video-h1{
+    padding: 0px 30px 10px 0px;
+}
+.video-h4{
+    padding: 0px 0px 10px 0px;
+    font-weight: 200;
+}
+.video-content{
+    float: right;
+}
+.ri-check-line{
+    color: white;
+}
+ul{
+    list-style: none;
+    padding: 10px 30px 0 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 10px;
+}
+ul li{
+    padding: 0 0 30px 0;
+    font-weight: 200;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li i{
+    padding: 0 20px 0 10px;
+}
+
+.third-body{
+    text-align: center;
+}
+/* @media screen and (max-width:858px){
+    .body{
+        position: relative;
+        padding: 0 0 70px 0;
+        
+    }
+    
+.body-content-h1{
+    padding: 20px 0 20px 10px;
+    font-size:3.5rem;
+    font-weight:600;
+    color: white;
+}
+
+.body-content-h3{
+    padding: 0px 10px 20px 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    word-break: normal;
+    text-align: center;
+}
+.sec-body-tspg{
+    display: block;
+    justify-content: space-around;
+    align-items:  center;
+}
+
+.sec-body-unified{
+    align-items: center;
+    border: 0;
+    width:300px;
+    height: 20%;
+    padding: 10px 20px 10px 20px;
+}
+.video-body{
+    display: inline-block;
+}
+.back-video{
+    left: 0;
+    width: 100%;
+    
+}
+ul{
+    padding: 0px 0px 0 30px;
+    text-align: left;
+}
+
+} */
+.third-bod-div{
+    text-align: center;
+    padding: 70px 50px 0 50px;
+}
+.third-bod-div-h1{
+    padding: 0 0 10px 0;
+}
+.third-bod-div-h4{
+    padding: 0 0 20px 0;
+}
+.third-bod-div-box{
+    display: flex;
+    border: none;
+    background-color: rgb(122, 120, 120);
+    padding: 0px 0px 0px 20px;
+    animation-name: shape2;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+
+}
+.third-bod-div-box1{
+    width: auto;
+    text-align: left;
+}
+.third-bod-div-box2-img{
+    width: 100%;
+    height: 100%;
+    padding: 0px 30px 0px 40px;
+}
+.third-bod-div-box1-h2{
+    padding: 30px 0 10px 0;
+    line-height: 18px;
+    font-size: 24px;
+}
+.third-bod-div-box1-h4{
+    padding: 10px 10px 30px 0;
+    font-weight: 200;
+    line-height: 24px;
+    word-spacing: 10px;
+    font-size: 18px;
+
+}
+.third-bod-div-box1-button{
+    padding: 20px;
+    cursor: pointer;
+    display: none;
+}
+.partner{
+    text-align: center;
+    padding-top: 0px;
+    }
+.partner h3{
+    padding: 20px 0 30px 0;
+    font-size: 36px;
+}
+marquee img{
+    width: 30vw;
+    height: 30vh;
+}
+marquee{
+    width: 100%;
+    height: auto;
+    background-color: slategrey;
+}
+.forth-body{
+    padding: 50px 0 0 0px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+.forth-body h1{
+    padding: 0 0 10px 0;
+}
+.forth-body-refresh{
+    border: none;
+    display: flex;
+    padding: 0 45px 50px 45px;
+}
+.forth-body-img{
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+    transition: all 1s;
+}
+.forth-body-flex{
+    text-align: center;
+    border: none;
+    padding: 0 20px 0 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.forth-body-flex img{
+    transition: transform 0.3s ease;
+    padding: 0 0 10px 0;
+}
+.forth-body-flex:hover img{
+    transform: scale(1.1);
+}
+.forth-body-flex-h5{
+    text-align: left;
+    padding: 10px 0px 0 0px;
+    font-weight: 300;
+    font-size: 14px;
+}
+.forth-body-button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+.forth-body-button1{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+}
+.forth-body-img1{
+    width: 40px;
+    float: left;
+    transition: none;
+    margin-right: 10px;
+}
+.forth-body-flex-h55{
+    padding: 20px 0 0 0;
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+}
+.contactus{
+    border: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 45px 30px 50px;
+    margin-top: 50px;
+}
+.contactus h1{
+    padding: 50px 0 40px 0;
+}
+.form{
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+}
+.form1{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    font-size: 24px;
+}
+
+input{
+    padding: 10px 0px 10px 10px;
+    font-size: 16px;
+}
+.labelinput{
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+    background-color: goldenrod;
+    border: none;
+}
+.lastbody{
+    border: none;
+    width: 100%;
+    height: 50%;
+    padding: 50px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lastbody-nav{
+    display: flex;
+}
+.lastbody-flex{
+    border: none;
+    padding: 0 0px 50px 40px;
+}
+.lastbody-flex h3{
+    font-weight: 100;
+}
+.lastbody-flex img{
+    width: 15vw;
+   cursor: pointer;
+}
+.Contact-flex{
+    display: flex;
+}
+
+.addressflex{
+    display: flex;
+}
+.middle ul{
+    display: block;
+}
+.middle li{
+    padding: 0 0 10px 0;
+}
+.middle h2{
+    padding-bottom: 10px;
+    color: goldenrod;
+}
+.middle{
+    padding: 70px 30px 160px 50px;
+}
+.middle a{
+    text-decoration: none;
+    color: white;
+}
+.middle a:hover{
+    color: blue;
+    font-weight: 400;
+}
+.Copyright{
+    text-align: center;
+}
+.Copyright h4{
+    font-weight: 200;
+}
+footer a i{
+    color: #ffff;
+}
+/*our customer*/
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+
+
+/*productpage*/
+/* our customer*/
+.ourcustomer {
+    text-align: center;
+    align-items: center;
+    padding: 80px 0 80px 0;
+}
+.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 0 0 10%;
+    padding-top: 40px;
+    
+    
+}
+.ourcustomer-client{
+    width: 80%;
+    height: 20vh;
+    margin-bottom: 15px;
+    border:none;
+    background-color: rgb(221, 217, 217);
+    box-shadow: 5px 5px 5px white;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.ourcustomer-client:hover{
+    transform: scale(1.1);
+}
+.ourcustomer-client img{
+    width:100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: grayscale(0%);
+}
+
+.ourcustomer-client H1 {
+    padding-top: 30PX;
+}
+.ourcustomer-client A{
+    text-decoration: none;
+    color: white;
+}
+/*unified-body*/
+.unified-body{
+    background-image: url("mybebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0 0 50px;
+    z-index: -1;
+    top: 0;
+    max-width:100%;
+    height: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    text-decoration: underline;
+}
+.h1-Unified-Communication{
+    text-align: left;
+    padding: 70px 0 10px 50PX;
+    line-height: 24px;
+}
+.h5-Unified-Communication{
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 100;
+    padding:10PX 0 0 50PX ;
+}
+.Unifiedproduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.h1-product{
+    text-align: center;
+    padding: 80px 0 50px 0;
+}
+.prod{
+    border-radius: 10px ;
+    padding: 200px 0 0 10px;
+}
+.product img{
+    max-width: 30vw;
+    max-height: 50vh;
+}
+
+/*CLOUD-COMMUNICATION*/
+.CLOUD-body{
+    background-image: url("unified thirrdbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 400px 0 0 50px;
+    z-index: -1;
+    top: 0;
+    max-width:100%;
+    height: 80vh;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.h1-CLOUD-COMPUTING{
+    text-align: left;
+    padding: 70px 0 10px 50PX;
+    line-height: 24px;
+}
+.h5-CLOUD-COMPUTING{
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 100;
+    padding:10PX 0 0 50PX ;
+}
+.cloud-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+}
+
+.h1-product{
+    text-align: center;
+    padding: 80px 0 0px 0;
+}
+/*comsumable*/
+
+.CONSUMABLE-body{
+    background-image: url("consumableimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 400px 0 0 50px;
+    z-index: -1;
+    top: 0;
+    max-width:100%;
+    height: 80vh;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.h1-CONSUMABLE{
+    text-align: left;
+    padding: 70px 0 10px 50PX;
+    line-height: 24px;
+}
+.h5-CONSUMABLE{
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 100;
+    padding:10PX 0 0 50PX ;
+}
+.consumable-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 0 0 20px;
+    
+}
+.h1-product{
+    text-align: center;
+    padding: 80px 0 50px 0;
+}
+
+/*ADVANCED DATA ANALYSIS*/
+
+.ADVANCED-body{
+    background-image: url("advancebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 400px 0 0 50px;
+    z-index: -1;
+    top: 0;
+    max-width:100%;
+    height: 80vh;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.h1-ADVANCED{
+    text-align: left;
+    padding: 70px 0 10px 50PX;
+    line-height: 24px;
+}
+.h5-ADVANCED{
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 100;
+    padding:10PX 0 0 50PX ;
+}
+.advanced-product{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    padding: 0 0 0 20px;
+    
+}
+.h1-product{
+    text-align: center;
+    padding: 80px 0 50px 0;
+}
+
+.othersolution{
+    text-align: center;
+}
+.sec-body-solution{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    align-items:  center;
+    padding: 40px 0 0 150px ;
+} 
+.sec-body-unified{
+    margin-bottom: 20px;
+}
+/*5G Connectivity*/
+
+.Connectivity-body{
+    background-image: url("unified thirrdbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 400px 0 0 50px;
+    z-index: -1;
+    top: 0;
+    max-width:100%;
+    height: 80vh;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.h1-CONNECTIVITY{
+    text-align: left;
+    padding: 70px 0 10px 50PX;
+    line-height: 24px;
+}
+.h5-CONNECTIVITY{
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 100;
+    padding:10PX 0 0 50PX ;
+}
+.connectivity-product{
+    display: grid;
+    grid-template-columns: 3fr 3fr 2.8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 0 0 20px;
+    
+}
+.h1-product{
+    text-align: center;
+    padding: 80px 0 50px 0;
+}
+.prod{
+    border-radius: 10px ;
+    padding: 200px 0 0 10px;
+}
+.prod h3{
+    text-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+.connectivityproduct1{
+    width: 90%;
+    height: 50vh;
+    background-image: url("videoconferencing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct2{
+    width: 90%;
+    height: 55vh;
+    background-image: url("iptelephony.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct3{
+    width: 90%;
+    height: 55vh;
+    background-image: url("cloudpbx.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct4{
+    width: 90%;
+    height: 55vh;
+    background-image: url("videoconferencing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct5{
+    width: 90%;
+    height: 55vh;
+    background-image: url("videoconferencing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct6{
+    width: 90%;
+    height: 55vh;
+    background-image: url("videoconferencing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct7{
+    width: 90%;
+    height: 55vh;
+    background-image: url("videoconferencing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct8{
+    width: 90%;
+    height: 55vh;
+    background-image: url("videoconferencing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connectivityproduct9{
+    width: 90%;
+    height: 55vh;
+    background-image: url("videoconferencing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* about us  */
