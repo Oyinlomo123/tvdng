@@ -67,7 +67,10 @@ header{
 }
    .sec-body{
     padding: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sec-body h1{
@@ -234,25 +237,28 @@ marquee{
 .form{
     margin: 20px auto;
     box-shadow: 0px 0px 10px gray;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
 }
 .form1{
     display: block;
 }
 label{
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 10px;
 }
 input{
     padding:5px;
-    font-size: 10px;
-    width: 65vw;
+    font-size: 14px;
+    width: 95%;
     border: none;
     border-radius: 2px;
     margin-left: 10px;
 }
 textarea{
- font-size: 10px;
- width: 65vw;
+ font-size: 14px;
+ width: 95%;
  height: 10vh;
  border: none;
  border-radius: 2px;
@@ -260,8 +266,8 @@ textarea{
 }
 .labelinput{
     padding:5px 5px 5px 5px;
-    font-size: 14px;
-    width: 15vw;
+    font-size: 18px;
+    width:5rem;
     background-color: goldenrod;
     border: none;
     border-radius: 3px;
@@ -283,10 +289,8 @@ textarea{
     width: 20vw;
 }
 
-.form{
-    width: 70vw;
-    margin-top: 5px ;
-}
+
+
 svg{
     width: 22px;
     height: 22px;
@@ -309,23 +313,23 @@ svg{
 }
 
 .Contact-flex h3{
-    font-size: 10px;
-}
-.tel{
     font-size: 14px;
 }
+.tel{
+    font-size: 18px;
+}
 .addressflex h3{
-    font-size: 12px;
+    font-size: 16px;
 }
 .middle h2{
-    font-size: 12px;
+    font-size: 16px;
     padding-bottom: 5px;
 }
 .middle ul{
     display: block;
 }
 .middle li{
-    font-size: 12px;
+    font-size: 16px;
     line-height: 5px;
     padding: 0 0 10px 0px;
     line-height: 20px;
@@ -356,13 +360,13 @@ svg{
     padding:10PX 20px 0 20PX ;
 }
 .Unifiedproduct{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0px;
 }
 .product img{
-    width: 50vw;
+    width: 70vw;
 }
 .h1-product{
     text-align: center;
@@ -379,9 +383,10 @@ svg{
 }
 
  .sec-body-solution{
-    display:grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     gap: 20px;
     align-items:  center;
     padding: 40px 0 0 0px ;
@@ -392,7 +397,7 @@ svg{
     }
     .productimg{
         width: 90%;
-        height: 40vh;
+        height: 50vh;
         border-radius: 10px;
         padding-bottom: 5px;
     }
@@ -447,8 +452,10 @@ svg{
         padding:10PX 20px 0 20PX ;
     }
     .connectivity-product{
-        display: grid;
-        grid-template-columns: 1fr;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
         padding: 0 0 0 20px;
         
@@ -474,8 +481,10 @@ svg{
         padding:10PX 20px 0 20PX ;
     }
     .consumable-product{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 50px;
         padding: 0 0 0 20px;
     }
@@ -869,11 +878,12 @@ h2 li{
     text-align: center;
 }
  .sec-body-solution{
-    display:block;
-    grid-template-columns: 1fr;
-    place-items: center;
-    width: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     align-items:  center;
+    padding: 40px 0 0 0px ;
 } 
 .solution{
         height: auto;
@@ -935,7 +945,8 @@ h2 li{
     }
     .connectivity-product{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
         gap: 20px;
         padding: 0 0 0 20px;
         
@@ -1373,14 +1384,15 @@ svg{
     text-align: center;
 }
 .sec-body-solution{
-    display:grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     gap: 20px;
     align-items:  center;
     padding: 40px 0 0 0px ;
     margin:0 0 0;
-} */
+} 
 .solution{
         height: auto;
     }
@@ -1891,7 +1903,7 @@ svg{
     }
 
     /* 5G Connectivity */
-    .Connectivity-body{
+    /* .Connectivity-body{
         padding: 150px 0 0 0px;
         top: 0;
         height: 50vh;
@@ -1915,10 +1927,10 @@ svg{
         gap: 20px;
         padding: 0 0 0 20px;
         
-    }
+    } */
     
     /* CONSUMABLE */
-     .CONSUMABLE-body{
+     /* .CONSUMABLE-body{
         padding: 150px 0 0 0px;
         top: 0;
         height: 50vh;
@@ -1938,7 +1950,7 @@ svg{
     }
     
     /* ADVANCED */
-    .ADVANCED-body{
+    /* .ADVANCED-body{
         padding: 150px 0 0 0px;
         top: 0;
         height: 50vh;
@@ -1961,5 +1973,5 @@ svg{
         grid-template-columns: 1fr 1fr;
         gap: 50px;
         padding: 0 0 0 20px;
-    }
-}  
+    } */
+ */
